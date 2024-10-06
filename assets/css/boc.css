@@ -1,0 +1,206 @@
+/* General Styles */
+body, html {
+    background-color: var(--background-light);
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: var(--text-color-dark);
+}
+
+/* Color Variables for Modern Look */
+:root {
+    --primary-color: #007bff;    /* Modern blue */
+    --accent-color: #ff6f61;     /* Modern coral */
+    --background-light: #f4f7f6; /* Light grey background */
+    --background-section: #ffffff; /* White background for cards */
+    --text-color-dark: #333333;  /* Dark text */
+    --text-color-light: #666666; /* Lighter text */
+    --footer-bg-color: #2c3e50;  /* Dark footer */
+    --footer-text-color: #ffffff;/* Footer text */
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.header-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.header-text {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.header-btn {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.header-btn:hover {
+    background-color: #ff5b4f;  /* Slightly darker shade for hover */
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    color: var(--text-color-dark);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Sections */
+.section {
+    background-color: var(--background-light); /* Subtle background */
+    padding: 80px 20px;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+/* Cards */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.card {
+    background: var(--background-section);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--text-color-dark);
+}
+
+.card-list {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+    color: var(--text-color-light);
+}
+
+.card-list li {
+    margin-bottom: 12px;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-color-dark);
+}
+
+.team-member p {
+    font-size: 1.2rem;
+    color: var(--text-color-light);
+}
+
+/* Publications Section */
+.publication-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+.publication-list li {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: var(--text-color-dark);
+}
+
+/* Contact Section */
+.contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 30px;
+}
+
+.footer p {
+    margin: 0;
+    color: var(--footer-text-color);
+}
+
+/* Specific Section Backgrounds */
+#overview {
+    background-color: #f7f7f7; /* Slightly lighter grey */
+}
+#goals {
+    background-color: #f1f1f1; /* Slightly darker grey */
+}
